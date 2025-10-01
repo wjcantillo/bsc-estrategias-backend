@@ -4,7 +4,7 @@ from transformers import pipeline
 from fastapi.middleware.cors import CORSMiddleware
 
 # Inicializar modelo HuggingFace
-generator = pipeline("text2text-generation", model="google/flan-t5-base")
+generator = pipeline("text2text-generation", model="google/flan-t5-small")
 
 # Inicializar FastAPI
 app = FastAPI()
